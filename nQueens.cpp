@@ -50,7 +50,7 @@ class Myclass{
 
     }
     vector<vector<string>> solvednQueen(int n){
-        vector<string> board;
+        vector<string> board(n,string(n,'.'));
         vector<vector<string>> ans;
 
         nQueens(board,0,n,ans);
